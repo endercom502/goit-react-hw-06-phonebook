@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 
 
-export const ContactsListItem = ({ name, number,toDelete,id }) => {
+export const ContactListItem = ({ name, number,toDelete,id }) => {
     return (
         <li>
             <p> {name}: {number}</p>
@@ -10,7 +10,7 @@ export const ContactsListItem = ({ name, number,toDelete,id }) => {
     )
 }
 
-ContactsListItem.propTypes = {
+ContactListItem.propTypes = {
     name: PropTypes.string.isRequired,
     number: PropTypes.number.isRequired
 }
